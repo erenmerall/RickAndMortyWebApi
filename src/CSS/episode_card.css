@@ -1,0 +1,158 @@
+.episodeCardGround {
+  background-color: rgb(134, 203, 97);
+  height: 100%;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.card {
+  border-radius: 4px;
+  background: linear-gradient(135deg, #bcd7e8, #e9ecef);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+  transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+  height: 230px;
+  margin-top: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card h3 {
+  font-weight: 600;
+}
+
+.card img {
+  width: 100px;
+  /* Daha küçük bir resim */
+  height: 100px;
+  /* Resim boyutları sabit */
+  border-radius: 10%;
+  /* Yuvarlak resim */
+  object-fit: cover;
+  /* Resimlerin orantılı şekilde sığması için */
+  position: absolute;
+  top: 50px;
+  margin-left: -30px;
+}
+
+.card-1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #3a7267;
+}
+
+.card h3 {
+  text-align: right;
+}
+
+.card-1 p {
+  text-align: right;
+}
+
+.card-1 img {
+  margin-top: 70px;
+  width: 50%;
+}
+
+.search {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+
+.search input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 25px;
+  border: 3px solid black;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.search input[type="text"]:focus {
+  border-color: darkgray;
+}
+
+.next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.next-button button {
+  background-color: #28a745;
+  /* Yeşil buton rengi */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 10px;
+  /* Butonlar arasında boşluk */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-button button:hover {
+  background-color: #218838;
+  /* Hover'da koyulaşan yeşil */
+}
+
+.next-button button:disabled {
+  background-color: #6c757d;
+  /* Disabled olduğunda gri renk */
+  cursor: not-allowed;
+  /* Kullanılamaz işaretçi */
+}
+
+.next-button span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #343a40;
+  /* Koyu gri yazı rengi */
+}
+
+@media(max-width:767px) {
+  .full {
+    margin-left: 70vw;
+  }
+
+  .next-button {
+    margin-left: 40vw;
+
+  }
+}
+
+@media (min-width:768px) and (max-width:819px) {
+  .full {
+    margin-left: 100vw;
+  }
+
+  .next-button {
+    margin-left: 18vw;
+  }
+}
+
+@media (min-width:820px) and (max-width:1023px) {
+  .full {
+    margin-left: 30vw;
+    width: 50px;
+  }
+
+  .next-button {
+    margin-left: 18vw;
+  }
+}
